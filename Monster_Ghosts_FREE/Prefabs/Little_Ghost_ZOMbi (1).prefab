@@ -105,7 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6423403878969977946}
-  - component: {fileID: 6423403878969977947}
+  - component: {fileID: 8933293694646895572}
   m_Layer: 0
   m_Name: Little_ghost_ANIMATOR
   m_TagString: Untagged
@@ -130,7 +130,7 @@ Transform:
   - {fileID: 6423403880718231733}
   m_Father: {fileID: 6423403879286395853}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &6423403878969977947
+--- !u!95 &8933293694646895572
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -138,9 +138,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6423403878969977949}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ec74708cbf9a55f4480e35a959740fae, type: 2}
+  m_Controller: {fileID: 9100000, guid: 96196dc8eeae0204ebcd691aa568bd6d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -193,7 +193,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6423403879286395853}
-  - component: {fileID: 6423403879286395855}
+  - component: {fileID: 1397013801727447435}
+  - component: {fileID: 8851070923898890648}
   m_Layer: 0
   m_Name: Little_Ghost_ZOMbi (1)
   m_TagString: Untagged
@@ -211,13 +212,13 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6423403878969977946}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &6423403879286395855
+--- !u!64 &1397013801727447435
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -236,9 +237,24 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4277936243970900915, guid: 9ad131497dd2d1545b6c35e7cc732b35, type: 3}
+--- !u!114 &8851070923898890648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6423403879286395854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79d6c27e90cafb4b80737640a9cb4c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  speed: 5
+  damage: 10
 --- !u!1 &6423403879501658884
 GameObject:
   m_ObjectHideFlags: 0

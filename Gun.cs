@@ -11,7 +11,7 @@ public class Gun : MonoBehaviour
         mainCamera = Camera.main;
     }
 
-    // Update is called once per frame
+   
     public void Shoot()
     {
         Vector3 aimpos = mainCamera.ScreenToWorldPoint(aim.position);
