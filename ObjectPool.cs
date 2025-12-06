@@ -12,7 +12,11 @@ public class Objectpool : MonoBehaviour
     {
         pool = new ObjectPool<GameObject>(createFunc: () => Instantiate(enemies[Random.Range(0, enemies.Count)]),
             actionOnGet: obj => obj.SetActive(true),
-            actionOnRelease: obj => obj.SetActive(false),
+            actionOnRelease: obj =>
+            {
+                obj.SetActive(false);
+                obj.GetComponent<Enemy>().health = 100;
+            },
             actionOnDestroy: obj => Destroy(obj.gameObject),
             collectionCheck:true, defaultCapacity:100,
             maxSize:1000);
